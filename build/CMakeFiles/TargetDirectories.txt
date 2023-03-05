@@ -1,0 +1,9 @@
+/e/code/udp/build/CMakeFiles/install/strip.dir
+/e/code/udp/build/CMakeFiles/install/local.dir
+/e/code/udp/build/CMakeFiles/install.dir
+/e/code/udp/build/CMakeFiles/list_install_components.dir
+/e/code/udp/build/CMakeFiles/rebuild_cache.dir
+/e/code/udp/build/CMakeFiles/edit_cache.dir
+/e/code/udp/build/CMakeFiles/kcpa.dir
+/e/code/udp/build/CMakeFiles/b.dir
+/e/code/udp/build/CMakeFiles/a.dir
