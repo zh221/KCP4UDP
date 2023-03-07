@@ -20,16 +20,21 @@ int main(int argc, char *argv[])
     // }
 
     UdpZ udpz;
-    udpz.InitServer("169.254.115.229", 9000);
+    udpz.InitServer("127.0.0.1", 9000, 100);
 
     while (true) {
-        char in_buff[1024] = {0};
+        char *msgBuff = nullptr;
         // struct sockaddr_in peer;
         // socklen_t peerLen = sizeof(peer);
         // bzero(&peer, peerLen);
         // recvfrom(sockfd, in_buff, sizeof(in_buff) - 1, 0, 
         //          (struct sockaddr*)&peer, &peerLen);
-        udpz.RecvMsg(in_buff, sizeof(in_buff));
+        int msgLen = 0;
+        int ret = udpz.RecvMsg(msgBuff, msgLen);
+        std::cout << ret << std::endl;
+        if (ret > 0) {
+            std::cout << msgBuff << std::endl;
+        }
     }
 
 

@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     // addr_b.sin_port = htons(9000);
 
     UdpZ udpz;
-    udpz.InitClient("169.254.115.229", 9000);
+    udpz.InitClient("127.0.0.1", 9000);
 
     unsigned int counter = 0;
     while (counter != 1000)
@@ -24,8 +24,10 @@ int main(int argc, char *argv[])
         // int ret = sendto(sockfd, msgStr.c_str(), msgStr.size(), 0, \
         //        (const struct sockaddr*)&addr_b, sizeof(addr_b));
         //  std::cout << "send : " << ret << std::endl;
-
-        udpz.SnedMsg(msgStr);
+        
+        int msgLen = msgStr.size();
+        int ret = udpz.SendMsg(msgStr.c_str(), msgLen);
+        std::cout << ret << std::endl;
         sleep(1);
         counter++;
     }
