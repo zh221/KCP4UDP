@@ -1,36 +1,24 @@
-#include <iostream>
-#include <cstdlib>
-#include <cstring>
-#include <ctime>
-
 #include "udpz.h"
 
 int main(int argc, char *argv[])
 {
-    // int sockfd = socket(AF_INET, SOCK_DGRAM, 0);
-    // struct sockaddr_in addr_b;
-    // bzero(&addr_b, sizeof(addr_b));
-    // addr_b.sin_family = AF_INET;
-    // addr_b.sin_addr.s_addr = inet_addr("169.254.115.229");
-    // addr_b.sin_port = htons(9000);
-
-    UdpZ udpz;
-    udpz.InitClient("127.0.0.1", 9000);
-
-    unsigned int counter = 0;
-    while (counter != 1000)
-    {
-        std::string msgStr = "hello a : " + std::to_string(counter);
-        // int ret = sendto(sockfd, msgStr.c_str(), msgStr.size(), 0, \
-        //        (const struct sockaddr*)&addr_b, sizeof(addr_b));
-        //  std::cout << "send : " << ret << std::endl;
-        
-        int msgLen = msgStr.size();
-        int ret = udpz.SendMsg(msgStr.c_str(), msgLen);
-        std::cout << ret << std::endl;
-        sleep(1);
-        counter++;
-    }
-
+    std::string s = "hello 123.";
+    uint8_t *data = new uint8_t[s.size() + 1];
+    memcpy(data, &s, s.size());
+    std::cout << data << std::endl;
+    // UdpTransceiver<std::string> client;
+    // if (client.InitClient("127.0.0.1", 9000) != 0) {
+    //     return 0;
+    // }
+    
+    // std::string userData = "hello udp.";
+    // int ret = 0;
+    // while (true) {
+    //     ret = client.SendMsg(userData, userData.size());
+    //     if (ret < 0) {
+    //         std::cout << "Failed to send data." << std::endl;
+    //     }
+    //     std::cout << "Send data size: " << ret << std::endl;
+    // }
     return 0;
 }
