@@ -1,0 +1,53 @@
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: /e/code/KCP4UDP/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make.exe -f Makefile cmTC_16f41/fast && /usr/bin/make  -f CMakeFiles/cmTC_16f41.dir/build.make CMakeFiles/cmTC_16f41.dir/build
+make[1]: Entering directory '/e/code/KCP4UDP/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_16f41.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++.exe   -v -o CMakeFiles/cmTC_16f41.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.21.1/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+Target: x86_64-pc-msys
+Configured with: /c/S/gcc/src/gcc-11.2.0/configure --build=x86_64-pc-msys --prefix=/usr --libexecdir=/usr/lib --enable-bootstrap --enable-shared --enable-shared-libgcc --enable-static --enable-version-specific-runtime-libs --with-arch=x86-64 --with-tune=generic --disable-multilib --enable-__cxa_atexit --with-dwarf2 --enable-languages=c,c++,fortran,lto --enable-graphite --enable-threads=posix --enable-libatomic --enable-libgomp --disable-libitm --enable-libquadmath --enable-libquadmath-support --disable-libssp --disable-win32-registry --disable-symvers --with-gnu-ld --with-gnu-as --disable-isl-version-check --enable-checking=release --without-libiconv-prefix --without-libintl-prefix --with-system-zlib --enable-linker-build-id --with-default-libstdcxx-abi=gcc4-compatible --enable-libstdcxx-filesystem-ts
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_16f41.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_16f41.dir/'
+ /usr/lib/gcc/x86_64-pc-msys/11.2.0/cc1plus.exe -quiet -v -idirafter /usr/lib/gcc/x86_64-pc-msys/11.2.0/../../../../lib/../include/w32api -idirafter /usr/lib/gcc/x86_64-pc-msys/11.2.0/../../../../x86_64-pc-msys/lib/../lib/../../include/w32api /usr/share/cmake-3.21.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_16f41.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccw7ejw0.s
+GNU C++17 (GCC) version 11.2.0 (x86_64-pc-msys)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-msys/11.2.0/../../../../x86_64-pc-msys/include"
+ignoring duplicate directory "/usr/lib/gcc/x86_64-pc-msys/11.2.0/../../../../x86_64-pc-msys/lib/../lib/../../include/w32api"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-pc-msys/11.2.0/include/c++
+ /usr/lib/gcc/x86_64-pc-msys/11.2.0/include/c++/x86_64-pc-msys
+ /usr/lib/gcc/x86_64-pc-msys/11.2.0/include/c++/backward
+ /usr/lib/gcc/x86_64-pc-msys/11.2.0/include
+ /usr/lib/gcc/x86_64-pc-msys/11.2.0/include-fixed
+ /usr/include
+ /usr/lib/gcc/x86_64-pc-msys/11.2.0/../../../../lib/../include/w32api
+End of search list.
+GNU C++17 (GCC) version 11.2.0 (x86_64-pc-msys)
+	compiled by GNU C version 11.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 9d5c61d1a1c82400b566673b3ad9ca77
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_16f41.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_16f41.dir/'
+ /usr/lib/gcc/x86_64-pc-msys/11.2.0/../../../../x86_64-pc-msys/bin/as.exe -v -o CMakeFiles/cmTC_16f41.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccw7ejw0.s
+GNU assembler version 2.37 (x86_64-pc-msys) using BFD version (GNU Binutils) 2.37
+COMPILER_PATH=/usr/lib/gcc/x86_64-pc-msys/11.2.0/:/usr/lib/gcc/x86_64-pc-msys/11.2.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/11.2.0/:/usr/lib/gcc/x86_64-pc-msys/:/usr/lib/gcc/x86_64-pc-msys/11.2.0/../../../../x86_64-pc-msys/bin/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-msys/11.2.0/:/usr/lib/gcc/x86_64-pc-msys/11.2.0/../../../../x86_64-pc-msys/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/11.2.0/../../../../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-msys/11.2.0/../../../../x86_64-pc-msys/lib/:/usr/lib/gcc/x86_64-pc-msys/11.2.0/../../../:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_16f41.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_16f41.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_16f41.exe
+/usr/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_16f41.dir/link.txt --verbose=1
+make[1]: *** [CMakeFiles/cmTC_16f41.dir/build.make:99: cmTC_16f41.exe] Error 127
+make[1]: Leaving directory '/e/code/KCP4UDP/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_16f41/fast] Error 2
+
+
+
+

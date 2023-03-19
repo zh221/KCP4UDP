@@ -57,10 +57,10 @@ RM = /usr/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /e/code/udp
+CMAKE_SOURCE_DIR = /e/code/KCP4UDP
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /e/code/udp/build
+CMAKE_BINARY_DIR = /e/code/KCP4UDP/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /e/code/udp/build/CMakeFiles /e/code/udp/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /e/code/KCP4UDP/build/CMakeFiles /e/code/KCP4UDP/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /e/code/udp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /e/code/KCP4UDP/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,19 +162,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named kcpa
-
-# Build rule for target.
-kcpa: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kcpa
-.PHONY : kcpa
-
-# fast build rule for target.
-kcpa/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kcpa.dir/build.make CMakeFiles/kcpa.dir/build
-.PHONY : kcpa/fast
-
-#=============================================================================
 # Target rules for targets named b
 
 # Build rule for target.
@@ -199,30 +186,6 @@ a : cmake_check_build_system
 a/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.dir/build.make CMakeFiles/a.dir/build
 .PHONY : a/fast
-
-kcpa.o: kcpa.cpp.o
-.PHONY : kcpa.o
-
-# target to build an object file
-kcpa.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kcpa.dir/build.make CMakeFiles/kcpa.dir/kcpa.cpp.o
-.PHONY : kcpa.cpp.o
-
-kcpa.i: kcpa.cpp.i
-.PHONY : kcpa.i
-
-# target to preprocess a source file
-kcpa.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kcpa.dir/build.make CMakeFiles/kcpa.dir/kcpa.cpp.i
-.PHONY : kcpa.cpp.i
-
-kcpa.s: kcpa.cpp.s
-.PHONY : kcpa.s
-
-# target to generate assembly for a file
-kcpa.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kcpa.dir/build.make CMakeFiles/kcpa.dir/kcpa.cpp.s
-.PHONY : kcpa.cpp.s
 
 udp_a.o: udp_a.cpp.o
 .PHONY : udp_a.o
@@ -286,10 +249,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... a"
 	@echo "... b"
-	@echo "... kcpa"
-	@echo "... kcpa.o"
-	@echo "... kcpa.i"
-	@echo "... kcpa.s"
 	@echo "... udp_a.o"
 	@echo "... udp_a.i"
 	@echo "... udp_a.s"

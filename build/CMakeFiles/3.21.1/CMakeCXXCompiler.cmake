@@ -30,7 +30,7 @@ set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
 set(CMAKE_CXX_COMPILER_LOADED 1)
 set(CMAKE_CXX_COMPILER_WORKS TRUE)
-set(CMAKE_CXX_ABI_COMPILED TRUE)
+set(CMAKE_CXX_ABI_COMPILED FALSE)
 set(CMAKE_COMPILER_IS_MINGW )
 set(CMAKE_COMPILER_IS_CYGWIN )
 if(CMAKE_COMPILER_IS_CYGWIN)
@@ -59,9 +59,9 @@ set(CMAKE_CXX_LINKER_PREFERENCE 30)
 set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)
 
 # Save compiler ABI information.
-set(CMAKE_CXX_SIZEOF_DATA_PTR "8")
+set(CMAKE_CXX_SIZEOF_DATA_PTR "")
 set(CMAKE_CXX_COMPILER_ABI "")
-set(CMAKE_CXX_BYTE_ORDER "LITTLE_ENDIAN")
+set(CMAKE_CXX_BYTE_ORDER "")
 set(CMAKE_CXX_LIBRARY_ARCHITECTURE "")
 
 if(CMAKE_CXX_SIZEOF_DATA_PTR)
@@ -85,7 +85,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/usr/lib/gcc/x86_64-pc-msys/11.2.0/include/c++;/usr/lib/gcc/x86_64-pc-msys/11.2.0/include/c++/x86_64-pc-msys;/usr/lib/gcc/x86_64-pc-msys/11.2.0/include/c++/backward;/usr/lib/gcc/x86_64-pc-msys/11.2.0/include;/usr/lib/gcc/x86_64-pc-msys/11.2.0/include-fixed;/usr/include;/usr/include/w32api")
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;gcc_s;gcc;msys-2.0;advapi32;shell32;user32;kernel32;gcc_s;gcc")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-pc-msys/11.2.0;/usr/x86_64-pc-msys/lib;/usr/lib")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/e/code/udp/udp_a.cpp" "CMakeFiles/a.dir/udp_a.cpp.o" "gcc" "CMakeFiles/a.dir/udp_a.cpp.o.d"
+  "/e/code/KCP4UDP/udp_a.cpp" "CMakeFiles/a.dir/udp_a.cpp.o" "gcc" "CMakeFiles/a.dir/udp_a.cpp.o.d"
   )
 
 # Targets to which this target links.
